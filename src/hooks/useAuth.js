@@ -16,7 +16,7 @@ export default function useAuth() {
     return () => {
       setAuth(new Authentication());
     };
-  });
+  }, []);
 
   return auth;
 }
