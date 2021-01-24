@@ -31,7 +31,8 @@ If you are using the [Developer Rig](https://dev.twitch.tv/docs/extensions/rig/)
 2.  Either create a new extension or use an existing one and hit "Next"
 3.  Choose "Use boilerplate code" under "Add Code to your Project" and hit "Next"
 4.  Let the boilerplate code download, install dependencies, and complete. Once finished, hit "Get Started"
-5.  Click on "Run Frontend" and add views in the "Extension Views" tab
+5.  Select the public folder for front end code
+5.  Write `npm run start` and click on "Run Frontend" and add views in the "Extension Views" tab
 6.  Accept any certificate errors, as the certificate is self-signed
 7.  You can now make changes in real-time and it'll update in all views!
 
