@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import useTwitchContextUpdate from '../../hooks/useTwitchContextUpdate';
+import useAuth from '../../hooks/useAuth';
 import twitch from '../../util/twitch';
 import './LiveConfigPage.css';
 
 const LiveConfigPage = () => {
   const auth = useAuth();
+
   const twitchContext = useTwitchContextUpdate();
 
   useEffect(() => {
@@ -42,7 +45,7 @@ const LiveConfigPage = () => {
       </div>
     );
   } else {
-    return <div className="LiveConfigPage"></div>;
+    return <div className="LiveConfigPage"> </div>;
   }
 };
 export default LiveConfigPage;
